@@ -3,16 +3,16 @@ package main
 
 values: {
 	metadata: {
-		name:      "creative-studio-prod"
-		namespace: "creative-studio-prod"
+		name:      *"creative-studio-beta" | string
+		namespace: *"creative-studio-beta" | string
 	}
 	app: "creative-studio"
 	image: {
 		repository: "demo.goharbor.io/creative-studio/creative-studio"
-		digest:     "sha256:d9ec0d8b5bf884cfa104972a242c0fb62c43db5fbf410c8b3e3f2b5a7ab8e079"
+		digest:     "sha256:edd6f736eec4d76af23214bbb7faaa7aaf3c57f8893f3dca1a97aab31c234161"
 		tag:        ""
 	}
-	replicas: 2
+	replicas: 3
 	service: {
 		port:     5000
 		nodePort: 32000

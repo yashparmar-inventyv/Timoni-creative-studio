@@ -3,13 +3,13 @@ package main
 
 values: {
 	metadata: {
-		name:      "creative-studio"
-		namespace: "creative-studio-prod"
+		name:      *"creative-studio" | string
+		namespace: *"creative-studio" | string
 	}
 	image: {
-		repository: "demo.goharbor.io/creative-studio/creative-studio"
-		digest:     ""
-		tag:        ""
+		repository: *"demo.goharbor.io/creative-studio/creative-studio" | string
+		digest:     *"" | string
+		tag:        *"" | string
 	}
-	message: "creative-studio running"
+	message: *"creative-studio running" | string
 }

@@ -52,11 +52,6 @@ timoni: {
 				enabled: false
 				size:    "1Gi"
 			} | _
-
-			quota: *null | _
-
-			limits: *null | _
-
 			image: _
 			message: _
 		}
