@@ -9,7 +9,7 @@ values: {
 	app: "creative-studio"
 	image: {
 		repository: "13.127.52.201/creative-studio-app/creative-studio-app"
-		digest:  "sha256:cced4f5b891341426e44c4801a9c5a4822cd79936a26a2f31a14462113bfb85e"
+		digest:  "sha256:b809686a71df0a87766925b93f1c55acdaeb56433061e5426b01dfb9b0587347"
 		tag:  ""
 	}
 	replicas: 3
