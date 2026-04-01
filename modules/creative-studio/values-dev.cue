@@ -2,16 +2,16 @@
 
 values: {
 	metadata: {
-		name:      *"creative-studio-beta" | string
-		namespace: *"creative-studio-beta" | string
+		name:      *"creative-studio-dev" | string
+		namespace: *"creative-studio-dev" | string
 	}
 	app: "creative-studio"
 	image: {
 		repository: "13.200.24.3/creative-studio-app/creative-studio-app"
-		digest:  "sha256:b809686a71df0a87766925b93f1c55acdaeb56433061e5426b01dfb9b0587347"
-		tag:  ""
+		digest:     "sha256:b809686a71df0a87766925b93f1c55acdaeb56433061e5426b01dfb9b0587347"
+		tag:        ""
 	}
-	replicas: 2
+	replicas: 1
 	service: {
 		port:     5000
 		nodePort: 32000
@@ -23,33 +23,33 @@ values: {
 	}
 	resources: {
 		requests: {
-			cpu:    "200m"
-			memory: "256Mi"
+			cpu:    "100m"
+			memory: "128Mi"
 		}
 		limits: {
-			cpu:    "400m"
-			memory: "512Mi"
+			cpu:    "200m"
+			memory: "256Mi"
 		}
 	}
 	quota: {
 		requests: {
-			cpu:    "800m"
-			memory: "768Mi"
+			cpu:    "400m"
+			memory: "512Mi"
 		}
 		limits: {
-			cpu:    "1500m"
-			memory: "1.5Gi"
+			cpu:    "800m"
+			memory: "1Gi"
 		}
 		pods: "10"
 	}
 	limits: {
 		default: {
-			cpu:    "400m"
-			memory: "512Mi"
+			cpu:    "200m"
+			memory: "256Mi"
 		}
 		defaultRequest: {
-			cpu:    "150m"
-			memory: "256Mi"
+			cpu:    "100m"
+			memory: "128Mi"
 		}
 	}
 	storage: {
@@ -57,5 +57,5 @@ values: {
 		size:    "1Gi"
 		class:   "local-path"
 	}
-	message: "creative studio running (beta)"
+	message: "creative studio running (dev)"
 }

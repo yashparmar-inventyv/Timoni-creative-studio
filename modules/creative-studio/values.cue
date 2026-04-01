@@ -3,8 +3,8 @@ package main
 
 values: {
 	metadata: {
-		name:      *"creative-studio-prod" | string
-		namespace: *"creative-studio-prod" | string
+		name:      *"creative-studio" | string
+		namespace: *"creative-studio" | string
 	}
 	app: "creative-studio"
 	image: {
@@ -58,5 +58,5 @@ values: {
 		size:    "1Gi"
 		class:   "local-path"
 	}
-	message: "creative studio running (prod)"
+	message: "creative studio running"
 }

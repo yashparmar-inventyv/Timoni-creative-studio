@@ -2,16 +2,16 @@
 
 values: {
 	metadata: {
-		name:      *"creative-studio-beta" | string
-		namespace: *"creative-studio-beta" | string
+		name:      *"creative-studio-prod" | string
+		namespace: *"creative-studio-prod" | string
 	}
 	app: "creative-studio"
 	image: {
 		repository: "13.200.24.3/creative-studio-app/creative-studio-app"
-		digest:  "sha256:b809686a71df0a87766925b93f1c55acdaeb56433061e5426b01dfb9b0587347"
-		tag:  ""
+		digest:     "sha256:b809686a71df0a87766925b93f1c55acdaeb56433061e5426b01dfb9b0587347"
+		tag:        ""
 	}
-	replicas: 2
+	replicas: 3
 	service: {
 		port:     5000
 		nodePort: 32000
@@ -57,5 +57,5 @@ values: {
 		size:    "1Gi"
 		class:   "local-path"
 	}
-	message: "creative studio running (beta)"
+	message: "creative studio running (prod)"
 }
