@@ -14,7 +14,7 @@ values: {
 	replicas: 1
 	service: {
 		port:     5000
-		nodePort: 32000
+		nodePort: 31000
 	}
 	strategy: {
 		maxUnavailable:  1
