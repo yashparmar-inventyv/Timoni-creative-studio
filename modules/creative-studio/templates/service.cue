@@ -24,9 +24,11 @@ import (
 
 		ports: [
 			{
-				port: 5000
+				port: #config.service.port
 				targetPort: 3000
-				//nodePort: 32000
+				if #config.service.nodePort != _|_ {
+					nodePort: #config.service.nodePort
+				}
 				protocol: "TCP"
 				name: "http"
 			},
