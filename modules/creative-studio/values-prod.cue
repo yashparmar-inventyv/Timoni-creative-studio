@@ -11,7 +11,7 @@ values: {
 		digest: "sha256:06c0ff53993b08ab06ab36e3e2cab4255d6c3388fc9fd5dd4bad02187e5f298b"
 		tag: ""
 	}
-	replicas: 2
+	replicas: 1
 	service: {
 		port:     5000
 		nodePort: 30000
@@ -23,11 +23,11 @@ values: {
 	}
 	resources: {
 		requests: {
-			cpu:    "200m"
+			cpu:    "100m"
 			memory: "256Mi"
 		}
 		limits: {
-			cpu:    "400m"
+			cpu:    "200m"
 			memory: "512Mi"
 		}
 	}
@@ -37,8 +37,8 @@ values: {
 			memory: "768Mi"
 		}
 		limits: {
-			cpu:    "1500m"
-			memory: "1.5Gi"
+			cpu:    "3000m"
+    		memory: "2Gi"
 		}
 		pods: "10"
 	}
